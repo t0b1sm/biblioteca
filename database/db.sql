@@ -1,5 +1,5 @@
 -- CREATE DATABASE Biblioteca;
-
+-- bah
 -- \c Biblioteca;
 CREATE TABLE usuarios (
  id SERIAL PRIMARY KEY,
