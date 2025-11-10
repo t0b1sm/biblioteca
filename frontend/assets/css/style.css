@@ -1,0 +1,118 @@
+:root{
+    --text: #28393C;
+    --acent: #1FA6BB;
+    --border: rgba(59, 176, 255, 0.3)
+    --radius: 16px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    font-family: "Elms Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  
+    background-color: #308491;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    color: var(--acent);
+    font-weight: 600;
+    margin-bottom: 25px;
+    margin-top: -25px;
+    text-shadow: #28393C 1px 1px 2px;
+}
+
+.form-card{
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 35px 30px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0;
+    box-shadow: 0 0 20px rgba(33, 79, 110, 0.3),
+    inset 0 0 10px rgba(59, 176, 255, 0.2);
+    backdrop-filter: blur(12px);
+    transition: 0.4s ease;
+}
+
+.form-card:hover{
+    box-shadow: 
+    0 0 30px rgba(108, 140, 255, 0.6),
+    inset 0 0 12px rgba(59, 176, 255, 0.3);
+}
+
+label{
+    display: block;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #a8c7ff;
+    margin-bottom: 6px;
+}
+
+
+input{
+    width: 100%;
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(59, 176, 255, 0.2);
+    background-color: #308491;
+    margin-bottom: 16px;
+    color: var(--text);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus{
+    border-color:var(--acent);
+    box-shadow: 0 0 10px rgba(59, 176, 255, 0.4);
+    outline: none;
+}
+
+input::placeholder{
+    color: #d3c1c1;
+    font-size: italic 0.9rem;
+    transition: color 0.3s ease;
+}
+
+input:focus::placeholder{
+    color: rgba(33, 79, 110, 0.3)
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--acent);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    transform: translateY(-1px);
+    background-color: #a8c7ff;
+}
+@keyframes fadeIn{
+    from {
+        opacity: 0;}
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
